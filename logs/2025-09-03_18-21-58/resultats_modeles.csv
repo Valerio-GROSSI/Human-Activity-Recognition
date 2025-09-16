@@ -1,0 +1,2 @@
+index_set,mean_acc,std_acc,test_accuracy,estimator_name,num_layers,hidden_size,d_model,nhead,out_channels,dropout,weight_decay,lr,scheduler_factor,batch_size,score
+1,95.4,2.3,95.0,Transformer,2,-,36,3,-,0.125,1.0e-06,4.0e-03,0.6,36,93.1
