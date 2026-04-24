@@ -49,11 +49,6 @@ Validation score: 96.8% ± 1.9%. Test score: 86.7%<br>
 Confusion matrix on the test set
 </p>
 
-<p align="center">
-Confusion matrix on the test set:<br>
-<img src="logs/confusion_matrix.png" width="60%">
-</p>
-
 <br>
 
 <p align="center">
