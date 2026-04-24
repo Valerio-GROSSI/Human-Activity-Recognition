@@ -18,12 +18,12 @@ conda activate name
 pip install -r requirements.txt
 ```
 
-2. Download the CSV files, with this command :
+2. Download the CSV files (Kaggle dataset), with this command :
 ```bash
 python Import_Data.py
 ```
 
-4. Move the downloaded CSV files (Kaggle dataset) in the project folder. The downloaded CSV files path is displayed in the terminal.
+4. Move the downloaded CSV files in the project folder. The path were the CSV files were downloaded is displayed in the terminal.
 
 3. Execute the command :
 ```bash
