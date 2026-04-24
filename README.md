@@ -40,13 +40,12 @@ python analyse.py
 
 ## Sample Results
 
-Sample outputs on the Kaggle dataset :
+Sample outputs on the Kaggle dataset (Confusion matrix on the Test set) :
 
 <p align="center">
+<img src="logs/2025-09-01_19-14-30/confusion matrix 27.png" width="80%"><br>
 <b>Optimal classifier using the 6 main variables</b><br>
 Validation score: 96.8% ± 1.9%. Test score: 86.7%<br>
-<img src="logs/2025-09-01_19-14-30/confusion matrix 27.png" width="80%"><br>
-Confusion matrix on the test set
 </p>
 
 <br>
