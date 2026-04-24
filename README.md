@@ -19,7 +19,7 @@ pip install -r requirements.txt
 ```
 
 2. Download the CSV files, with this command :
-3. ```bash
+```bash
 python Import_Data.py
 ```
 
@@ -27,7 +27,7 @@ python Import_Data.py
 The path were the CSV files were downloaded is displayed in the terminal.
 
 3. Execute the command :
-4. ```bash
+```bash
 python PyTorch_cv.py
 ```
 
