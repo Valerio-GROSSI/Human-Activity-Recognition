@@ -58,7 +58,9 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 
 <br>
 
+<p align="center">
 Excerpt from the log of the optimal classifier using the full feature set (see /logs) :
+</p>
 ```bash
 2025-09-03 18:21:58,124 - ANALYSE DES CLASSES
 
