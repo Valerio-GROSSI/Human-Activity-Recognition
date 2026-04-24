@@ -46,12 +46,12 @@ Sample outputs on the Kaggle dataset :
 <b>Optimal classifier using the 6 main variables</b><br>
 Validation score: 96.8% ± 1.9%. Test score: 86.7%<br>
 Confusion matrix on the test set :<br>
-  <img src="assets/detection.gif" width="80%">
+  <img src="logs/2025-09-01_19-14-30" width="80%">
 </p>
 
 <p align="center">
 <b>Optimal classifier using the full feature set</b><br>
 Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 Confusion matrix on the test set :<br>
-<img src="assets/tracking.gif" width="80%">
+<img src="logs/2025-09-03_18-21-58" width="80%">
 </p>
