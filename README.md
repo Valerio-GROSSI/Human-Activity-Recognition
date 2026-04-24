@@ -36,3 +36,9 @@ python PyTorch_cv.py
 cd logs/...
 python analyse.py
 ```
+
+<br>
+
+## Sample Results
+
+Sample outputs on the MOT17 dataset :
