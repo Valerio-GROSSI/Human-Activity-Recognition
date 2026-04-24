@@ -212,7 +212,7 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 2025-09-03 19:38:01,890 - 
 
 2025-09-03 19:38:01,890 - Résultats finaux pour le jeu d'hyperparamètres 1
-```
 
 2025-09-03 19:38:01,890 - Accuracy de validation croisée: 95.36% ± 2.29%
 2025-09-03 19:38:01,890 - Accuracy sur le test: 95.00%
+```
