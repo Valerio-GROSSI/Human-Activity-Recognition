@@ -56,6 +56,7 @@ Validation score: 96.8% ± 1.9%. Test score: 86.7%<br>
 Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 </p>
 
+```bash
 2025-09-03 18:21:58,124 - ANALYSE DES CLASSES
 
 2025-09-03 18:21:58,124 - Les données sont réparties en 6 classes
@@ -211,6 +212,7 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 2025-09-03 19:38:01,890 - 
 
 2025-09-03 19:38:01,890 - Résultats finaux pour le jeu d'hyperparamètres 1
+```
 
 2025-09-03 19:38:01,890 - Accuracy de validation croisée: 95.36% ± 2.29%
 2025-09-03 19:38:01,890 - Accuracy sur le test: 95.00%
