@@ -7,22 +7,32 @@ It aims to classify different types of physical activities by training and evalu
 Please refer to the PDF in the current directory for more detailed information about this project and instructions on how to run it.
 For the first run and setup, please refer to the instructions below.
 
-FIRST RUN:
+<br>
+
+## First Run
 
 1. To have a python environment containing the expected libraries for running the scripts :
+```bash
 conda create -n name python=3.10
 conda activate name
 pip install -r requirements.txt
+```
 
-2. Download the CSV files, with this command:
+2. Download the CSV files, with this command :
+3. ```bash
 python Import_Data.py
+```
 
-3. Then move the downloaded CSV files in the project folder
-The path were the CSV files were downloaded is displayed in the terminal
+4. Move the downloaded CSV files in the project folde.
+The path were the CSV files were downloaded is displayed in the terminal.
 
-3. Execute the command
+3. Execute the command :
+4. ```bash
 python PyTorch_cv.py
+```
 
-4. Execute the following command in the results folder that was just created by the previous command
+5. Execute the following command in the results folder that was just created by the previous command :
+```bash
 cd logs/...
 python analyse.py
+```
