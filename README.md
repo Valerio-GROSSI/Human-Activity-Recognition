@@ -1,5 +1,9 @@
 # Human Activity Recognition
 
+This project focuses on Human Activity Recognition (HAR) using multivariate time-series data collected from smartphone IMU sensors.
+
+It aims to classify different types of physical activities by training and evaluating supervised machine learning models on labeled datasets.
+
 Read the added PDF in the current directory to know what is about this project.
 
 FIRST RUN:
