@@ -23,7 +23,7 @@ pip install -r requirements.txt
 python Import_Data.py
 ```
 
-4. Move the downloaded CSV files in the project folde.
+4. Move the downloaded CSV files (Kaggle dataset) in the project folder.
 The path were the CSV files were downloaded is displayed in the terminal.
 
 3. Execute the command :
