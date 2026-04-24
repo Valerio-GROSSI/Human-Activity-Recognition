@@ -49,6 +49,8 @@ Confusion matrix on the test set :<br>
   <img src="logs/2025-09-01_19-14-30" width="80%">
 </p>
 
+<br>
+
 <p align="center">
 <b>Optimal classifier using the full feature set</b><br>
 Validation score: 95.4% ± 2.3%. Test score: 95%<br>
