@@ -40,4 +40,4 @@ python analyse.py
 
 ## Sample Results
 
-Sample outputs on the MOT17 dataset :
+Sample outputs on the Kaggle dataset :
