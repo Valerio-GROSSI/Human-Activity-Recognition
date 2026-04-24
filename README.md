@@ -4,7 +4,8 @@ This project focuses on Human Activity Recognition (HAR) using multivariate time
 
 It aims to classify different types of physical activities by training and evaluating supervised machine learning models on labeled datasets.
 
-Read the added PDF in the current directory to know what is about this project.
+Please refer to the PDF in the current directory for more detailed information about this project and instructions on how to run it.
+For the first run and setup, please refer to the instructions below.
 
 FIRST RUN:
 
