@@ -63,7 +63,133 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 </p>
 
 ```bash
+2025-09-01 19:14:30,573 - ANALYSE DES CLASSES
 
+2025-09-01 19:14:30,573 - Les données sont réparties en 6 classes
+2025-09-01 19:14:30,573 - Classes: LAYING, SITTING, STANDING, WALKING, WALKING_DOWNSTAIRS, WALKING_UPSTAIRS
+
+2025-09-01 19:14:30,573 - ANALYSE DES VARIABLES
+
+2025-09-01 19:14:30,573 - Nombre de variables retenues : 6
+2025-09-01 19:14:30,573 - Variables retenues : ['tBodyAcc-mean()-X', 'tBodyAcc-mean()-Y', 'tBodyAcc-mean()-Z', 'tBodyGyro-mean()-X', 'tBodyGyro-mean()-Y', 'tBodyGyro-mean()-Z']
+
+2025-09-01 19:14:30,573 - ANALYSE DES DONNEES D'ENTRAINEMENT
+
+2025-09-01 19:14:31,015 - Il y a 280 séquences de mesures
+2025-09-01 19:14:31,033 - Répartition des classes:
+2025-09-01 19:14:31,035 - LAYING : 43 séquences (15.36%)
+2025-09-01 19:14:31,035 - SITTING : 43 séquences (15.36%)
+2025-09-01 19:14:31,035 - STANDING : 42 séquences (15.00%)
+2025-09-01 19:14:31,035 - WALKING : 42 séquences (15.00%)
+2025-09-01 19:14:31,035 - WALKING_DOWNSTAIRS : 56 séquences (20.00%)
+2025-09-01 19:14:31,035 - WALKING_UPSTAIRS : 54 séquences (19.29%)
+2025-09-01 19:14:31,047 - La plus longue séquence comporte 48 éléments
+
+2025-09-01 19:14:31,054 - Les données sont centrées-réduites et un padding de zeros est appliqué afin d'uniformiser la longueur des séquences à celle maximale
+
+2025-09-01 19:14:31,054 - ANALYSE DES DONNEES DE TEST
+
+2025-09-01 19:14:31,195 - Il y a 120 séquences de mesures
+2025-09-01 19:14:31,195 - Répartition des classes:
+2025-09-01 19:14:31,195 - LAYING : 18 séquences (15.00%)
+2025-09-01 19:14:31,195 - SITTING : 18 séquences (15.00%)
+2025-09-01 19:14:31,195 - STANDING : 18 séquences (15.00%)
+2025-09-01 19:14:31,195 - WALKING : 18 séquences (15.00%)
+2025-09-01 19:14:31,195 - WALKING_DOWNSTAIRS : 25 séquences (20.83%)
+2025-09-01 19:14:31,195 - WALKING_UPSTAIRS : 23 séquences (19.17%)
+2025-09-01 19:14:31,200 - La plus longue séquence comporte 40 éléments
+
+2025-09-01 19:14:31,201 - Les données sont centrées-réduites et un padding de zeros est appliqué afin d'uniformiser la longueur des séquences à celle maximale
+
+2025-09-01 19:14:31,201 - HYPERPARAMETRES FIXES
+
+2025-09-01 19:14:31,201 - Nombre de cycles d'entrainement maximal: 500
+2025-09-01 19:14:31,201 - Nombre de cycles d'entrainement maximal sans amélioration avant arret précoce: 80
+2025-09-01 19:14:31,201 - Planificateur du taux d'apprentissage: ReduceLROnPlateau
+2025-09-01 19:14:31,201 - Nombre d'époques de tolérance du planificateur: 30
+2025-09-01 19:14:31,201 - Nombre de folds pour la validation croisée stratifiée: 10
+2025-09-01 19:14:31,201 - Optimiseur: Adam avec weight_decay
+2025-09-01 19:14:31,201 - Métrique de perte: CrossEntropyLoss
+2025-09-01 19:14:31,201 - Graine aléatoire pour la reproductibilité des découpages de la validation croisée entre chaque jeu d'hyperparamètres: 42
+
+2025-09-01 19:14:31,201 - HYPERPARAMETRES TESTES
+
+2025-09-01 19:14:31,201 - {'estimator': {'Transformer': {'d_model': [36, 48, 60, 72], 'nhead': [2, 3, 4, 12], 'num_layers': [2, 3, 4], 'dropout': [0, 0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175]}}, 'weight_decay': [5e-07, 7.5e-07, 1e-06, 2.5e-06, 5e-06], 'lr': [0.0035, 0.004, 0.0045, 0.005, 0.0055], 'scheduler_factor': [0.4, 0.5, 0.6], 'batch_size': [28, 32, 36]}
+
+2025-09-01 19:14:31,201 - DÉBUT DE LA RECHERCHE ALEATOIRE D'HYPERPARAMÈTRES AVEC SAUVEGARDE DES RESULTATS
+
+2025-09-01 19:14:31,201 - Nombre de jeux d'hyperparamètres à tester: 300
+
+2025-09-01 19:14:31,201 - JEU D'HYPERPARAMÈTRES 1:
+2025-09-01 19:14:31,201 - {'estimator_name': 'Transformer', 'estimator_params': {'d_model': 72, 'nhead': 4, 'num_layers': 4, 'dropout': 0.075}, 'weight_decay': 2.5e-06, 'lr': 0.0035, 'scheduler_factor': 0.4, 'batch_size': 32}
+
+2025-09-01 19:14:31,201 - Début de la validation croisée pour le jeu d'hyperparamètres 1
+
+2025-09-01 19:14:31,201 - Variables sélectionnées : mêmes variables que celles retenues au départ (pas de sélection en avant)
+
+2025-09-01 19:14:31,203 - === Fold 1/10 ===
+2025-09-01 19:14:32,997 - Epoch 1/500 - Train Loss: 2.2143, Train Acc: 15.08% - Val loss: 1.8508, Val Acc: 17.86%
+2025-09-01 19:14:35,744 - Early stopping à l'epoch 86
+2025-09-01 19:14:35,745 - Fold 1 - Accuracy finale: 21.43%
+2025-09-01 19:14:35,746 - === Fold 2/10 ===
+2025-09-01 19:14:35,793 - Epoch 1/500 - Train Loss: 2.2919, Train Acc: 15.48% - Val loss: 1.9059, Val Acc: 17.86%
+2025-09-01 19:14:38,610 - Early stopping à l'epoch 89
+2025-09-01 19:14:38,612 - Fold 2 - Accuracy finale: 21.43%
+2025-09-01 19:14:38,612 - === Fold 3/10 ===
+2025-09-01 19:14:38,651 - Epoch 1/500 - Train Loss: 2.3582, Train Acc: 15.87% - Val loss: 1.8260, Val Acc: 21.43%
+2025-09-01 19:14:41,378 - Early stopping à l'epoch 87
+2025-09-01 19:14:41,380 - Fold 3 - Accuracy finale: 21.43%
+2025-09-01 19:14:41,380 - === Fold 4/10 ===
+2025-09-01 19:14:41,418 - Epoch 1/500 - Train Loss: 2.2608, Train Acc: 16.27% - Val loss: 1.9493, Val Acc: 17.86%
+2025-09-01 19:14:44,251 - Early stopping à l'epoch 88
+2025-09-01 19:14:44,253 - Fold 4 - Accuracy finale: 21.43%
+2025-09-01 19:14:44,253 - === Fold 5/10 ===
+2025-09-01 19:14:44,293 - Epoch 1/500 - Train Loss: 2.3225, Train Acc: 16.67% - Val loss: 1.9863, Val Acc: 14.29%
+2025-09-01 19:14:47,013 - Early stopping à l'epoch 85
+2025-09-01 19:14:47,015 - Fold 5 - Accuracy finale: 21.43%
+2025-09-01 19:14:47,015 - === Fold 6/10 ===
+2025-09-01 19:14:47,053 - Epoch 1/500 - Train Loss: 2.1476, Train Acc: 17.06% - Val loss: 1.8863, Val Acc: 17.86%
+2025-09-01 19:14:49,646 - Early stopping à l'epoch 83
+2025-09-01 19:14:49,648 - Fold 6 - Accuracy finale: 21.43%
+2025-09-01 19:14:49,648 - === Fold 7/10 ===
+2025-09-01 19:14:49,689 - Epoch 1/500 - Train Loss: 2.2805, Train Acc: 15.48% - Val loss: 1.8451, Val Acc: 14.29%
+2025-09-01 19:14:52,590 - Early stopping à l'epoch 87
+2025-09-01 19:14:52,592 - Fold 7 - Accuracy finale: 17.86%
+2025-09-01 19:14:52,592 - === Fold 8/10 ===
+2025-09-01 19:14:52,631 - Epoch 1/500 - Train Loss: 2.1117, Train Acc: 15.48% - Val loss: 1.8606, Val Acc: 14.29%
+2025-09-01 19:14:55,323 - Early stopping à l'epoch 85
+2025-09-01 19:14:55,325 - Fold 8 - Accuracy finale: 17.86%
+2025-09-01 19:14:55,325 - === Fold 9/10 ===
+2025-09-01 19:14:55,367 - Epoch 1/500 - Train Loss: 2.2645, Train Acc: 16.27% - Val loss: 1.8233, Val Acc: 21.43%
+2025-09-01 19:14:58,657 - Early stopping à l'epoch 99
+2025-09-01 19:14:58,659 - Fold 9 - Accuracy finale: 17.86%
+2025-09-01 19:14:58,659 - === Fold 10/10 ===
+2025-09-01 19:14:58,701 - Epoch 1/500 - Train Loss: 2.2384, Train Acc: 21.43% - Val loss: 1.9112, Val Acc: 17.86%
+2025-09-01 19:15:01,577 - Early stopping à l'epoch 86
+2025-09-01 19:15:01,579 - Fold 10 - Accuracy finale: 17.86%
+2025-09-01 19:15:01,579 - 
+2025-09-01 19:15:01,579 - Résultats de la validation croisée
+2025-09-01 19:15:01,579 - 
+2025-09-01 19:15:01,579 - Accuracy moyenne: 20.00% ± 1.75%
+2025-09-01 19:15:01,579 - Loss moyenne: 1.7850 ± 0.0013
+2025-09-01 19:15:01,579 - Nombre d'epochs moyen: 87
+2025-09-01 19:15:01,579 - Accuracy par fold: ['21.43%', '21.43%', '21.43%', '21.43%', '21.43%', '21.43%', '17.86%', '17.86%', '17.86%', '17.86%']
+
+2025-09-01 19:15:01,579 - Entrainement du modèle final pour le jeu d'hyperparamètres 1
+
+2025-09-01 19:15:01,624 - Epoch 1/87 - Loss: 2.2339, Acc: 17.14%
+2025-09-01 19:15:04,646 - Epoch 87/87 - Loss: 1.7896, Acc: 18.57%
+2025-09-01 19:15:04,648 - 
+
+2025-09-01 19:15:04,648 - Résultats finaux pour le jeu d'hyperparamètres 1
+
+2025-09-01 19:15:04,648 - Accuracy de validation croisée: 20.00% ± 1.75%
+2025-09-01 19:15:04,648 - Accuracy sur le test: 20.83%
+
+...
+
+2025-09-01 23:28:08,619 - JEU D'HYPERPARAMÈTRES 300:
+...
 ```
 
 <br>
