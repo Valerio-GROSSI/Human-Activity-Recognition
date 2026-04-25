@@ -214,7 +214,6 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 2025-09-03 18:21:59,293 - Nombre de variables retenues : 26
 2025-09-03 18:21:59,293 - Variables retenues : ['fBodyAcc-bandsEnergy()-1,16', ..., 'tBodyGyro-mean()-X', ..., 'tBodyAcc-std()-X']
 
-
 2025-09-03 18:21:59,293 - ANALYSE DES DONNEES D'ENTRAINEMENT
 
 2025-09-03 18:21:59,628 - Il y a 280 séquences de mesures
