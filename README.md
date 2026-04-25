@@ -358,6 +358,14 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 2025-09-03 19:38:01,890 - Accuracy sur le test: 95.00%
 ```
 
+<br>
+
+<p align="center">
+<b>Results obtained during the search for the best estimator of the optimal classifier using the 6 main variables (see /logs) :</b><br>
+</p>
+
+<br>
+
 |   index_set |   mean_acc |   std_acc |   test_accuracy | estimator_name   |   num_layers | hidden_size   | d_model   | nhead   | out_channels   |   dropout |   weight_decay |     lr |   scheduler_factor |   batch_size |   score |
 |------------:|-----------:|----------:|----------------:|:-----------------|-------------:|:--------------|:----------|:--------|:---------------|----------:|---------------:|-------:|-------------------:|-------------:|--------:|
 |          25 |       95.4 |       3.2 |            93.3 | Transformer      |            2 | -             | 36.0      | 4.0     | -              |     0.05  |        1e-06   | 0.0055 |                0.6 |           28 |    92.1 |
