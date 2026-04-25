@@ -213,7 +213,7 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 2025-09-03 18:21:58,936 - Méthode de filtrage sur les scores issus de tests de Kruskal-Wallis pour les statistiques mean et std.
 2025-09-03 18:21:59,293 - Nombre de variables retenues : 26
 2025-09-03 18:21:59,293 - Variables retenues : ['fBodyAcc-bandsEnergy()-1,16', ..., 'tBodyGyro-mean()-X', ..., 'tBodyAcc-std()-X']
-]
+
 
 2025-09-03 18:21:59,293 - ANALYSE DES DONNEES D'ENTRAINEMENT
 
