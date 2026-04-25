@@ -194,7 +194,6 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 
 <br>
 
-
 <p align="center">
 <b>Training log of the optimal classifier using the full feature set (see /logs) :</b><br>
 </p>
