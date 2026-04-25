@@ -361,10 +361,8 @@ Validation score: 95.4% ± 2.3%. Test score: 95%<br>
 <br>
 
 <p align="center">
-<b>Results obtained during the search for the best estimator of the optimal classifier using the 6 main variables (see /logs) :</b><br>
+<b>Search results for the best estimator of the optimal classifier using the 6 main variables (see /logs) :</b><br>
 </p>
-
-<br>
 
 |   index_set |   mean_acc |   std_acc |   test_accuracy | estimator_name   |   num_layers | hidden_size   | d_model   | nhead   | out_channels   |   dropout |   weight_decay |     lr |   scheduler_factor |   batch_size |   score |
 |------------:|-----------:|----------:|----------------:|:-----------------|-------------:|:--------------|:----------|:--------|:---------------|----------:|---------------:|-------:|-------------------:|-------------:|--------:|
